@@ -1,4 +1,4 @@
-SELECT customer_id, SUM(sales_amount) AS total_sales
+SELECT customer_name, SUM(sales) AS total_spent
 FROM sales
-GROUP BY customer_id
-ORDER BY total_sales DESC
+GROUP BY customer_name
+ORDER BY total_spent DESC
